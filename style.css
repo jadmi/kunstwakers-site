@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "navfont";
+  src: url(fonts/CfQuebecStampRegular-e4Zn.ttf);
+}
+
 body {
   margin: 0;
   background-color: #e7d094;
@@ -8,7 +13,12 @@ header {
   padding-top: 1em;
 }
 
+header img {
+  max-width: 90vw;
+}
+
 nav ul {
+  font-family: "navfont", sans-serif;
   display: flex;
   justify-content: space-evenly;
   background-color: #c12600;
@@ -19,4 +29,9 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
+  padding: 1.7em;
+}
+
+nav a:active {
+  text-decoration: underline;
 }
