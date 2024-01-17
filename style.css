@@ -3,6 +3,16 @@
   src: url(fonts/CfQuebecStampRegular-e4Zn.ttf);
 }
 
+@font-face {
+  font-family: "headerfont";
+  src: url(fonts/Stampete-dpxg.ttf);
+}
+
+@font-face {
+  font-family: "bodyfont";
+  src: url(fonts/stamped.TTF);
+}
+
 body {
   margin: 0;
   background-color: #e7d094;
@@ -14,7 +24,7 @@ header {
 }
 
 header img {
-  max-width: 90vw;
+  width: 90vw;
 }
 
 nav ul {
@@ -24,6 +34,8 @@ nav ul {
   background-color: #c12600;
   list-style-type: none;
   padding: 1em;
+  margin-bottom: 0em;
+  font-size: 0.95em;
 }
 
 nav a {
@@ -32,6 +44,41 @@ nav a {
   padding: 1.7em;
 }
 
-nav a:active {
-  text-decoration: underline;
+.banner {
+  width: 100vw;
+  height: 37vh;
+}
+
+p {
+  font-family: "bodyfont", sans-serif;
+  color: white;
+  max-width: 70vw;
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+h1 {
+  font-family: "headerfont", sans-serif;
+  color: white;
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.uitleg-kunstwakers {
+  background-color: #c12600;
+  padding-left: 0.8em;
+  padding-bottom: 0.5em;
+  width: 75vw;
+  margin-left: 0.8em;
+}
+
+.lees-meer {
+  font-family: "headerfont", sans-serif;
+  color: white;
+  text-decoration: underline white 0.1em;
+  display: flex;
+  justify-content: end;
+  padding-right: 1em;
+  text-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.5);
 }
